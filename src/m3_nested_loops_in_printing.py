@@ -212,7 +212,7 @@ def alternating_brackets(m, n):
     #   would defeat the goal of providing practice at loops within loops.
     # -------------------------------------------------------------------------
     for k in range(m-n+1):
-        for 
+        for
 
 def run_test_triangle_same_number_in_each_row():
     """ Tests the    triangle_same_number_in_each_row    function. """
