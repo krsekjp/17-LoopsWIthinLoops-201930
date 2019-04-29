@@ -4,16 +4,16 @@ in the context of SEQUENCES OF SUB-SEQUENCES.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Josh Krsek.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
     """ Calls the other functions to test them. """
     run_test_multiply_numbers()
-    run_test_sum_numbers()
-    run_test_print_characters()
-    run_test_print_characters_slanted()
+    # run_test_sum_numbers()
+    # run_test_print_characters()
+    # run_test_print_characters_slanted()
 
 
 def run_test_multiply_numbers():
@@ -129,6 +129,12 @@ def multiply_numbers(sequence_of_lists):
     #             to loop through it in the INNER loop.
     #        -- See   m2e_nested_loops_in_sequences   as needed.
     # -------------------------------------------------------------------------
+    multiplier = 1
+    for k in range(len(sequence_of_lists)):
+        for j in range(len(sequence_of_lists[k])):
+            sequence_of_lists[k][j] = sequence_of_lists[k][j] * multiplier
+        multiplier = multiplier + 1
+
 
 
 def run_test_sum_numbers():
